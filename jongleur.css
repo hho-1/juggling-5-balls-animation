@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #23B684;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+    height: 80vh;
+    width: 40vw;
+    background-color: #49daaa;
+    margin: auto;
+    margin-top: 10vh;
+  }
+  div#loader {
+    position: relative;
+    margin-top: 10vh;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @keyframes jongleur {
+    0% {
+      transform: translateX(-220px) translateY(600px);
+    }
+    20% {
+      transform: translateX(20px) translateY(50px) scale(1.1);
+    }
+    22% {
+      transform: translateX(33px) translateY(20px) scale(1.1);
+    }
+    23% {
+      transform: translateX(40px) translateY(0px);
+    }
+    26% {
+      transform: translateX(60px) translateY(30px);
+    }
+    29% {
+      transform: translateX(80px) translateY(80px);
+    }
+    46% {
+      transform: translateX(220px) translateY(520px);
+    }
+    51% {
+      transform: translateX(180px) translateY(600px) scale(1.1);
+    }
+    71% {
+      transform: translateX(-60px) translateY(50px);
+    }
+    73% {
+      transform: translateX(-73px) translateY(20px);
+    }
+    74% {
+      transform: translateX(-80px) translateY(0px);
+    }
+    77% {
+      transform: translateX(-100px) translateY(30px);
+    }
+    80% {
+      transform: translateX(-120px) translateY(80px);
+    }
+    97% {
+      transform: translateX(-260px) translateY(520px);
+    }
+    100% {
+      transform: translateX(-220px) translateY(600px);
+    }
+  }
+  span.ball {
+    position: absolute;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    animation: jongleur 6s linear infinite;
+  }
+  span.ball:nth-child(1) {
+    animation-delay: 1.2s;
+    background-color: red;
+  }
+  span.ball:nth-child(2) {
+    animation-delay: 2.4s;
+    background-color: navy;
+  }
+  span.ball:nth-child(3) {
+    animation-delay: 3.6s;
+    background-color:gold;
+  }
+  span.ball:nth-child(4) {
+    animation-delay: 4.8s;
+    background-color: blue;
+  }
+  
